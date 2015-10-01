@@ -3,9 +3,9 @@ import mobservable from 'mobservable';
 import mobservableReact from 'mobservable-react';
 
 var RenderCounter = React.createClass({
-    _c: 0,
+    counter: 0,
     render: function() {
-        return <div className="render-counter">{++this._c % 2 ? 'odd' : 'even'}</div>;
+        return <div className="render-counter">{++this.counter % 2 ? 'odd' : 'even'}</div>;
     }
 });
 
